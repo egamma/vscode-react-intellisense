@@ -29,9 +29,10 @@
 
 ## Setup VS Code intellisense for react.js project: 
 
-1. Install VS Code, if it has not been done yet - [eslint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint).
-2. Create jsconfig.json file
-    ```
+1. Install VS Code, if it has not been done yet - install the [eslint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint).
+2. Create a jsconfig.json file
+
+    ```json
     "compilerOptions": { 
         "target": "ES6", 
         "module": "commonjs", 
@@ -40,7 +41,7 @@
     ```    
 3. Set up eslint: 
     - npm install eslint –-save-dev 
-    - create .eslintrc file
+    - create a .eslintrc.json file
     ``` 
     "parser": "babel-eslint", 
     "env": { 
@@ -60,9 +61,9 @@
     } 
     ```
     - edit VS Code Workspace Settings (.vscode/settings.json): 
-    ```
+    
+    ```json
     "javascript.validate.enable": false,
-    "eslint.enable": true
     ```
 4. Set up babel: 
     - npm install babel-core --save-dev 
